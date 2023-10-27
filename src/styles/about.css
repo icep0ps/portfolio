@@ -1,0 +1,33 @@
+section {
+  margin: 150px 0;
+}
+
+#about .myimgs {
+  background: url(../../public/img/IMG-20210413-WA0020.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#hobbies .description {
+  grid-area: description;
+}
+
+#hobbies {
+  grid-template-areas: 'img description';
+}
+
+#hobbies .myimgs {
+  background: url(../../public/img/IMG-20210414-WA0020.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-area: img;
+}
+
+#experience .myimgs {
+  background: url(../../public/img/IMG-20210413-WA0107.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
