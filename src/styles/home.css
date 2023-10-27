@@ -4,20 +4,6 @@ article div {
   justify-content: space-between;
 }
 
-button {
-  padding: 15px;
-  font-family: 'Poppins', sans-serif;
-  border: none;
-  border-radius: 18px;
-  color: var(--text-color);
-  background-color: var(--btn-color);
-  align-self: flex-start;
-}
-
-form button {
-  width: 100px;
-}
-
 #introduction .myimgs {
   background: url(../../public/img/IMG-20210413-WA0020.jpg);
   background-size: cover;
@@ -96,32 +82,4 @@ form button {
 #contact > h1 {
   padding: 0 10px;
   font-size: 3rem;
-}
-
-.project {
-  display: flex;
-  flex-direction: column;
-  border: 2px solid greenyellow;
-  border-radius: 30px;
-  padding: 20px;
-}
-
-.project h3 {
-  margin: 0;
-}
-
-.project p {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  line-clamp: 4;
-  -webkit-box-orient: vertical;
-}
-
-.languages {
-  gap: 10px;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  list-style-type: none;
 }

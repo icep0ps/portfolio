@@ -51,6 +51,10 @@ section {
   margin: 50px 0;
 }
 
+h1 span {
+  color: var(--btn-color);
+}
+
 p {
   font-size: 0.8rem;
 }
@@ -73,6 +77,24 @@ textarea {
   border: 2px solid var(--text-color);
 }
 
+button {
+  padding: 15px;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  border-radius: 18px;
+  color: var(--text-color);
+  background-color: var(--btn-color);
+  align-self: flex-start;
+}
+
+form button {
+  width: 100px;
+}
+
+.white {
+  filter: invert();
+}
+
 .description {
   display: flex;
   flex-direction: column;
@@ -89,6 +111,34 @@ textarea {
   counter-increment: section;
   content: '0' counter(section) '. ';
   font-family: 'Sometype Mono', monospace;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid greenyellow;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.project h3 {
+  margin: 0;
+}
+
+.project p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.languages {
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
 }
 
 .myimgs {
