@@ -25,3 +25,24 @@ section {
   margin-top: 70px;
   gap: 60px;
 }
+
+#thank_you_popup h4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#wrapper {
+  background-color: rgba(0, 0, 0, 0.322);
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  position: fixed;
+}
+
+#thank_you_popup {
+  text-align: center;
+  background-color: var(--main-color);
+  border-radius: 20px;
+}

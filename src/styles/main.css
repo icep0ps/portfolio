@@ -12,6 +12,7 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--main-color);
   counter-reset: section link;
+  overflow-x: hidden;
 }
 
 main {
@@ -21,7 +22,15 @@ main {
 
 nav {
   display: flex;
+  position: relative;
   justify-content: space-between;
+}
+
+nav img {
+  align-self: center;
+  position: absolute;
+  right: 0;
+  display: none;
 }
 
 nav ol {
@@ -46,9 +55,10 @@ nav ol li a {
 
 section {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   place-items: center;
   margin: 50px 0;
+  gap: 30px;
 }
 
 h1 span {
@@ -149,4 +159,58 @@ form button {
   width: 250px;
   height: 250px;
   border-radius: 50%;
+}
+
+#humburger {
+  top: 0;
+  font-size: 1.5rem;
+  z-index: 100;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  position: fixed;
+  background-color: var(--text-color);
+  flex-direction: column;
+}
+
+#humburger img {
+  top: 50px;
+  right: 50px;
+}
+
+#humburger ol {
+  height: 100%;
+  display: flex;
+
+  color: #000000;
+  align-self: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#humburger ol a {
+  color: #000000;
+}
+
+@media only screen and (max-width: 380px) {
+  .myimgs {
+    width: 150px;
+    height: 150px;
+  }
+
+  #contact > h1 {
+    padding: 0 10px;
+    font-size: 3rem;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  nav ol {
+    display: none;
+  }
+  nav img {
+    display: block;
+  }
 }
