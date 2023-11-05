@@ -39,10 +39,17 @@ section {
   height: 100vh;
   z-index: 1;
   position: fixed;
+  top: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
 }
 
 #thank_you_popup {
   text-align: center;
+  width: max(300px, 30%);
+  height: fit-content;
+  padding: 10px;
   background-color: var(--main-color);
   border-radius: 20px;
 }
