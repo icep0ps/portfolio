@@ -13,3 +13,10 @@ section {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 50px;
 }
+
+.project:nth-child(even) {
+  border-color: var(--green);
+}
+.project:nth-child(odd) {
+  border-color: var(--red);
+}

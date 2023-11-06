@@ -11,7 +11,9 @@
   <body>
     <main>
       <nav>
-        <h4>tapiwa.mukoyi</h4>
+        <a href="./index.html">
+          <h4>tapiwa.mukoyi</h4>
+        </a>
         <img
           src="./public/svg/humburger.svg"
           width="30"
@@ -43,13 +45,7 @@
       </nav>
 
       <section id="hero">
-        <div class="static-txt">Hi i'm tapiwa the</div>
-        <ul class="dynamic-txt">
-          <li><span>web developer</span></li>
-          <li><span>graphic designer</span></li>
-          <li><span>motion designer</span></li>
-          <li><span>video editor</span></li>
-        </ul>
+        <h1 id="hero-txt">Hello Stranger, Welcome to my Portfolio 👋</h1>
       </section>
 
       <section id="introduction">
@@ -71,6 +67,22 @@
       </section>
 
       <section>
+        <div class="description">
+          <h1>Projects</h1>
+          <p>
+            I am passionate about web development and I have completed several projects
+            using TypeScript and Next.js. These are two of my favorite technologies
+            because they allow me to create fast, scalable and reliable web applications.
+            I have learned a lot from these projects, such as how to use hooks, dynamic
+            routing, server-side rendering and API routes. I also gained experience in
+            working with different databases, authentication systems and deployment
+            platforms. I am always eager to learn new skills and improve my existing ones.
+            I want to make more projects that showcase my abilities and challenge me to
+            grow as a web developer.
+          </p>
+          <a href="./src/pages/projects.html"><button>View all</button></a>
+        </div>
+
         <div id="projects">
           <article class="project">
             <h3>weather forecast app</h3>
@@ -94,21 +106,6 @@
             </div>
           </article>
         </div>
-
-        <div class="description">
-          <h1>Projects</h1>
-          <p>
-            I am passionate about web development and I have completed several projects
-            using TypeScript and Next.js. These are two of my favorite technologies
-            because they allow me to create fast, scalable and reliable web applications.
-            I have learned a lot from these projects, such as how to use hooks, dynamic
-            routing, server-side rendering and API routes. I also gained experience in
-            working with different databases, authentication systems and deployment
-            platforms. I am always eager to learn new skills and improve my existing ones.
-            I want to make more projects that showcase my abilities and challenge me to
-            grow as a web developer.
-          </p>
-        </div>
       </section>
 
       <section id="contact">
@@ -126,35 +123,50 @@
             </p>
 
             <form action="">
-              <input type="text" name="name" id="" placeholder="name" />
-              <input type="email" name="email" id="" placeholder="email address" />
-              <textarea name="message" id="" placeholder="message" rows="5"></textarea>
+              <input type="text" name="name" id="" placeholder="name" required />
+              <input
+                type="email"
+                name="email"
+                id=""
+                placeholder="email address"
+                required
+              />
+              <textarea
+                name="message"
+                id=""
+                placeholder="message"
+                rows="5"
+                required
+              ></textarea>
               <button>submit</button>
             </form>
           </div>
         </div>
       </section>
-      <div id="wrapper">
-        <div id="thank_you_popup">
-          <h4 id="thank_you">
-            Thank you
-            <img
-              src="../../public/svg/check.svg"
-              alt=""
-              srcset=""
-              class="white"
-              width="20"
-              height="20"
-            />
-          </h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi earum suscipit
-            id minus tempora eius ducimus itaque fugit numquam laudantium, tempore
-            cupiditate a, quidem neque consequatur illum expedita, aliquid odit?s
-          </p>
-          <button id="close_popup_btn">You're Welcome!</button>
-        </div>
-      </div>
     </main>
+    <div id="wrapper">
+      <div id="thank_you_popup">
+        <h4 id="thank_you">
+          Thank you
+          <img
+            src="./public/svg/check.svg"
+            alt=""
+            srcset=""
+            class="white"
+            width="20"
+            height="20"
+          />
+        </h4>
+        <p>
+          Thank you for your interest in working with me on your website project. I'm
+          thrilled to hear that you have a vision for your online presence and that you
+          are looking for a professional developer to make it a reality. I'm confident
+          that I can deliver a website that meets your needs and exceeds your
+          expectations. I look forward to hearing from you soon and working together on
+          this exciting opportunity.
+        </p>
+        <button id="close_popup_btn">You're Welcome!</button>
+      </div>
+    </div>
   </body>
 </html>

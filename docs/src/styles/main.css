@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Sometype+Mono&display=swap');
 
 :root {
+  --red: #ff8098;
+  --blue: #276ecc;
+  --green: #00e417;
+  --text-color: #ffff;
   --btn-color: #c8a946;
   --main-color: #001427;
-  --text-color: #ffff;
   --relative-hight: -360px;
 }
 
@@ -14,6 +17,12 @@ body {
   background-color: var(--main-color);
   counter-reset: section link;
   overflow-x: hidden;
+  margin: 0;
+}
+
+nav > a {
+  text-decoration: none;
+  color: var(--text-color);
 }
 
 main {
@@ -47,6 +56,10 @@ nav ol li::before {
   counter-increment: link;
   content: '0' counter(link) '. ';
   font-family: 'Sometype Mono', monospace;
+}
+
+nav ol li a:hover {
+  color: var(--green);
 }
 
 nav ol li a {
@@ -122,6 +135,7 @@ form button {
   counter-increment: section;
   content: '0' counter(section) '. ';
   font-family: 'Sometype Mono', monospace;
+  color: var(--red);
 }
 
 .project {
